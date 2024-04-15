@@ -100,9 +100,9 @@ fun MyIntents(){
         )
         // End of TopAppBar
 OutlinedButton(onClick = {
-    val simToolKitLaunchIntent =
+     val simToolKitLaunchIntent =
         mContext.packageManager.getLaunchIntentForPackage("com.android.stk")
-    simToolKitLaunchIntent?.let { mContext.startActivity(it) }
+        simToolKitLaunchIntent?.let { mContext.startActivity(it)}
 
 },
     modifier = Modifier
